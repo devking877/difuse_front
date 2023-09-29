@@ -18,8 +18,7 @@ export default function Header() {
   return (
     <Navbar
       fluid
-      rounded
-      className={`px-5 pt-4 sticky top-0 bg-[#d6dbdc] z-10`}
+      className={`px-5 pt-4 sticky top-0 z-10`}
     >
       <Navbar.Brand href="/">
         <img
