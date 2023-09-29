@@ -100,27 +100,25 @@ const data6=[
 export default function Dmsbg100() {
     return(
         <div className="flex flex-col items-center p-6 gap-24 bg-white" style={{fontFamily:'Roboto, sans-serif'}}>
-            <section className="flex flex-row items-center">
-                <div className="flex flex-col">
+            <section className="flex flex-col md:flex-row items-center">
+                <div className="flex flex-col gap-10 pb-10 md:order-1 order-2">
                     <div className="font-black text-5xl">DMSBG-100</div>
-                    <br/><br/>
                     <div className="text-5xl">High performance, secure, and reliable gateway for your network</div>
-                    <br/><br/>
                     <a href="/contact"><Button className='bg-[#031159]'>Learn more</Button></a>
                 </div>
-                <div><img src="../dmsbg100.png"></img></div>
+                <div className="md:order-2 order-1 pb-10"><img src="../dmsbg100.png"></img></div>
             </section>
-            <section className="flex flex-row items-center text-left text-2xl">
-                <div><img src="../dmsbg100.png"></img></div>
+            <section className="flex flex-col md:flex-row items-center text-left text-2xl">
+                <div className="pb-10"><img src="../dmsbg100.png"></img></div>
                 <div className="flex flex-col items-left gap-4">
                     <div>Home router is necessary to connect you to the internet but it is idle most of the time, just eating electricity. Why not use it for more tasks?</div>
                     <div>With powerful hardware, Turris Omnia Wi-Fi 6 can handle gigabit traffic and still be able to do much more. You can use it as a home server, NAS, printserver and it even has a virtual server built-in.</div>
                     <a><Button className='bg-[#031159]'>TECHNICAL SPECIFICATION</Button></a>
                 </div>
             </section>
-            <section className="flex flex-col items-center text-center">
-                <div className="font-bold text-5xl" style={{paddingBottom:"40px"}}>Open and secure software</div>
-                <div className="flex flex-col md:flex-row gap-4 text-left">
+            <section className="flex flex-col items-center text-center gap-10">
+                <div className="font-bold text-5xl">Open and secure software</div>
+                <div className="grid md:flex md:flex-row gap-4 text-left" style={{gridTemplateColumns:"repeat(2, minmax(0, 1fr))"}}>
                     {
                         data3.map((data, ind)=>{
                             return (
@@ -133,12 +131,11 @@ export default function Dmsbg100() {
                         })
                     }
                 </div>
-                <br/><br/>
                 <a><Button className='bg-[#031159]'>MORE ABOUT TURRIS OS</Button></a>
             </section>
-            <section className="flex flex-col text-left items-center">
-                <div className="font-extrabold text-5xl" style={{paddingBottom:"40px"}}>Performance</div>
-                <div className="grid gap-4" style={{gridTemplateColumns:"repeat(2, minmax(0, 1fr))"}}>
+            <section className="flex flex-col text-left items-center gap-10">
+                <div className="font-extrabold text-5xl">Performance</div>
+                <div className="flex flex-col md:grid gap-4" style={{gridTemplateColumns:"repeat(2, minmax(0, 1fr))"}}>
                     {
                         data4.map((data, ind)=>{
                             return (
@@ -154,9 +151,9 @@ export default function Dmsbg100() {
                     }
                 </div>
             </section>
-            <section className="flex flex-col items-center text-center">
-                <div className="font-bold text-5xl">Hardware and features</div><br/><br/>
-                <div className="flex flex-col md:flex-row text-left items-center">
+            <section className="flex flex-col items-center text-center gap-10">
+                <div className="font-bold text-5xl">Hardware and features</div>
+                <div className="flex flex-col md:flex-row text-left items-center gap-10">
                     <div className="grid gap-4" style={{gridTemplateColumns:"repeat(2, minmax(0, 1fr))"}}>
                         {
                             data5.map((data, ind)=>{
@@ -169,12 +166,12 @@ export default function Dmsbg100() {
                                 )
                             })
                         }
-                    </div><br/>
+                    </div>
                     <div><img src="/dmsbg100.png"></img></div>
                 </div>
             </section>
             <section className="flex flex-col items-center">
-                <div className="flex flex-col md:flex-row gap-4 text-left">
+                <div className="grid md:flex md:flex-row gap-4 text-left" style={{gridTemplateColumns:"repeat(2, minmax(0, 1fr))"}}>
                     {
                         data6.map((data, ind)=>{
                             return (

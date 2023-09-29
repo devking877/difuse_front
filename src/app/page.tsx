@@ -18,26 +18,20 @@ export default function Home() {
           <div className='text-xl text-gray-600 mb-8 aos-init aos-animate'>Realize your potential with our secure gateway delivering reliable connectivity and advanced features</div>
         </section> */}
         <section className='flex flex-col items-center md:flex-row w-full'>
-          <div className='flex flex-col w-1/3'>
+          <div className='flex flex-col gap-10 pb-10 md:order-1 order-2'>
             <div className='text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate'>DMSBG-100</div>
-            <br/><br/>
-            <div className='font-inter text-3xl text-[#3C0D99] font-black'>High performance, secure, and reliable gateway for your network</div>
-            <br/><br/>
+            <div className='font-inter text-3xl font-black'>High performance, secure, and reliable gateway for your network</div>
             <Link href='/products/dmsbg100'><Button className='bg-[#031159]'>Learn more</Button></Link>
-            <br/><br/>
           </div>
-          <div className='w-2/3'><img src="./dmsbg100.png" alt="img"/></div>
+          <div className='md:order-2 order1 pb-10'><img src="./dmsbg100.png" alt="img"/></div>
         </section>
         <section className='flex flex-col items-center md:flex-row w-full'>
-          <div className='flex flex-col w-1/3'>
+          <div className='flex flex-col gap-10 pb-10 md:order-1 order-2'>
             <div className='text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate'>DPBX-50</div>
-            <br/><br/>
-            <div className='font-inter text-3xl text-[#3C0D99] font-black'>Reliable soft pbx for your office</div>
-            <br/><br/>
+            <div className='font-inter text-3xl font-black'>Reliable soft pbx for your office</div>
             <Link href='/products/dpbx50'><Button className='bg-[#031159]'>Learn more</Button></Link>
-            <br/><br/>
           </div>
-          <div className='w-2/3'><img src="./dpbx50.png" alt="img"/></div>
+          <div className='md:order-2 order1 pb-10'><img src="./dpbx50.png" alt="img"/></div>
         </section>
         <section>We make open source and secure network devices</section>
       </div>
