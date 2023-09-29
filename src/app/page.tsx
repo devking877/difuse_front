@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className='w-full'>
       <Header/>
-      <main className='flex flex-col items-center w-full bg-white' style={{fontFamily:'Roboto, sans-serif'}}>
+      <main className='flex flex-col items-center w-full bg-white text-black' style={{fontFamily:'Roboto, sans-serif'}}>
       <div className="flex min-h-screen flex-col items-center gap-24 w-full md:px-24 px-4 py-24">
         {/* <section className='flex flex-col items-center text-center'>
           <img src="./dmsbg100.png" alt="img"/>
