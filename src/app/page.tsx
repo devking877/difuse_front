@@ -2,6 +2,7 @@
 
 import { Button } from 'flowbite-react'
 import Header from './Components/Header'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
             <br/><br/>
             <div className='font-inter text-5xl text-[#3C0D99] font-black'>High performance, secure, and reliable gateway for your network</div>
             <br/><br/>
-            <a href='/products/dmsbg100'><Button>Learn more</Button></a>
+            <Link href='/products/dmsbg100'><Button>Learn more</Button></Link>
             <br/><br/>
           </div>
           <div className='w-2/3'><img src="./dmsbg100.png" alt="img"/></div>
@@ -33,7 +34,7 @@ export default function Home() {
             <br/><br/>
             <div className='font-inter text-5xl text-[#3C0D99] font-black'>Reliable soft pbx for your office</div>
             <br/><br/>
-            <a href='/products/dpbx50'><Button>Learn more</Button></a>
+            <Link href='/products/dpbx50'><Button>Learn more</Button></Link>
             <br/><br/>
           </div>
           <div className='w-2/3'><img src="./dpbx50.png" alt="img"/></div>

@@ -122,9 +122,9 @@ export default function Dmsbg100() {
                 <div className="font-bold text-5xl">Open and secure software</div><br/><br/>
                 <div className="flex flex-col md:flex-row gap-4 text-left">
                     {
-                        data3.map((data)=>{
+                        data3.map((data, ind)=>{
                             return (
-                                <Card>
+                                <Card key={ind}>
                                     {data.icon}
                                     <p className="font-bold">{data.title}</p>
                                     <p>{data.description}</p>
@@ -140,9 +140,9 @@ export default function Dmsbg100() {
                 <div className="font-extrabold text-5xl">Performance</div><br/>
                 <div className="grid gap-4" style={{gridTemplateColumns:"repeat(2, minmax(0, 1fr))"}}>
                     {
-                        data4.map((data)=>{
+                        data4.map((data, ind)=>{
                             return (
-                                <Card>
+                                <Card key={ind}>
                                     <div className="h-1/2">
                                         <p className="font-bold">{data.title}</p>
                                         <p>{data.description}</p>
@@ -159,9 +159,9 @@ export default function Dmsbg100() {
                 <div className="flex flex-col md:flex-row text-left items-center">
                     <div className="grid gap-4" style={{gridTemplateColumns:"repeat(2, minmax(0, 1fr))"}}>
                         {
-                            data5.map((data)=>{
+                            data5.map((data, ind)=>{
                                 return (
-                                    <Card>
+                                    <Card key={ind}>
                                         {data.icon}
                                         <p className="font-bold">{data.title}</p>
                                         <p>{data.description}</p>
@@ -176,9 +176,9 @@ export default function Dmsbg100() {
             <section className="flex flex-col items-center">
                 <div className="flex flex-col md:flex-row gap-4 text-left">
                     {
-                        data6.map((data)=>{
+                        data6.map((data, ind)=>{
                             return (
-                                <Card>
+                                <Card key={ind}>
                                     <div><img src={data.imgUrl}></img></div>
                                     <p className="font-bold">{data.title}</p>
                                     <p>{data.description}</p>
